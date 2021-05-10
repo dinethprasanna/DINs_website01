@@ -1,0 +1,555 @@
+*{
+	margin: 0;padding:0;box-sizing: border-box;
+}
+body{
+	font-family:DejaVu Serif, Georgia, serif;background-color: #FFFFFF;
+}
+
+.container{
+	width: 90%;margin: 0 auto;
+}
+header{
+	background-color: #B8B8B8;
+}
+header h1{
+	padding: 20px;
+}
+
+nav{
+	background-color: #272727;
+}
+nav ul{
+	text-align: right;
+	list-style: none;
+}
+nav ul li{
+	display: inline;
+}
+nav ul li a{
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	color:#E6F73A;
+	font-weight: 600;
+	border-left:1px solid #FCFB00;
+	margin: 9px auto;
+	padding: 8px 12px;
+}
+nav ul li a:hover{
+	background-color: #FFF500; color: red;
+}
+nav ul li a:active{
+	background-color: red;
+	color: aliceblue;
+}
+.mobnav h3{
+	text-align: center;
+	padding: 20px;
+	background-color: #020202;
+	color: #FFFFFF;
+}
+
+.mobnav ul li{
+	display: block;
+	width: 100%;
+}
+.mobnav ul li a{
+	width: 100%;border-bottom: #F4F78A 2px solid;border-left: none;padding: 15px
+}
+.mobnav{
+	display: none;
+}
+/*this is up to navigation now its body start*/
+.home-1{
+	width: 90%;
+	height: 304px;
+	background-color: transparent;
+	margin: 14px auto;
+	padding: 4px;
+}
+.home-1 img{
+	float:left;
+	width: 350px;
+	height: auto;
+	padding: 2px;
+	margin-right: 20px;
+}
+.home-1 p{
+	text-align: justify;
+	line-height: 20px;
+}
+.home-slide{
+	width: 90%;
+	margin: 20px auto;
+	height: auto;
+	
+}
+#home-img-slider{
+	overflow: hidden;
+}
+#home-img-slider figure{
+	position: relative;
+	margin: 0;
+	width: 500%;
+	animation: 20s slider infinite;
+}
+#home-img-slider figure img{
+	float: left;
+	width: 20%;
+}
+@keyframes slider{
+	0%{
+		left: 0;
+	}
+	20%{
+		left: 0;
+	}
+	25%{
+		left: -100%;
+	}
+	45%{
+		left: -100%;
+	}
+	50%{
+		left: -200%;
+	}
+	70%{
+		left: -200%;
+	}
+	75%{
+		left: -300%;
+	}
+	95%{
+		left: -300%;
+	}
+	100%{
+		left: -400%;
+	}
+}
+.home-abt{
+	width: 90%;
+	margin: 20px auto;
+	height: auto;
+	background-color: transparent;
+	padding: 20px;
+}
+.home-abt h1{
+	text-align: center;
+	font-size: 50px;
+	color: #F90423
+}
+.home-abt p{
+	text-align: center;
+	padding: 40px 5px;
+	font-size: 20px;
+}
+button{
+	color: yellow;
+	background-color: #000000;
+	width:110px;
+	height: 40px;
+	margin-left: 80%;
+	font-size: 14px;
+	border-color: transparent;
+	border-radius: 15px;
+}
+button:hover{
+	background-color: red;
+	color: white;
+	padding: 10px;
+}
+.home-ser{
+	width: 90%;
+	margin: 20px auto;
+	height: auto;
+	background-color: transparent;
+	padding: 20px;
+}
+.home-ser h1{
+	text-align: center;
+	font-size: 50px;
+	color: #F90423
+}
+.home-ser p{
+	text-align: center;
+	padding: 40px 5px;
+	font-size: 20px;
+}
+.home-ser figure{
+	margin: 10px auto;
+	width: 100%;
+}
+.home-ser img{
+	width: 48%;
+	margin: 10px auto;
+	padding-left: 5%
+}
+/*------------------service page designs------------------*/
+.service-cont{
+	width: 90%;
+	margin: 12px auto;
+	padding: 16px 0px;
+	background-color: #ECE6E6;
+	border-radius: 8px;
+}
+.service-cont h1{
+	color: #2B0A00;
+	text-align: center;
+}
+.service-cont figure{
+	margin: 10px auto;
+	width: 100%;
+}
+.service-cont img{
+	width: 70%;
+	margin: 10px 15%;
+	padding: 10px;
+}
+.service-cont p{
+	font-size: 18px;
+	letter-spacing: 0.1em;
+	line-height: 1.5;
+	text-align: justify;
+	padding: 5px 25px;
+	
+}
+
+/*----------------------------contact page styles-----------------------------------*/
+.contact{
+	width: 90%;
+	margin: 20px auto;
+	height: auto;
+	background-color:rgba(5,11,30,1.00);
+	padding: 20px;
+}
+.contact h1{
+	text-align: center;
+	font-size: 50px;
+	color: rgba(244,255,140,1.00);
+}
+.contact p{
+	text-align: center;
+	padding: 40px 5px;
+	font-size: 20px;
+	color: white;
+}
+.contact form{
+	color: white;padding: 50px;margin-bottom: 15px;
+}
+.contact label,input,textarea,submit{
+	margin: 10px 10px;
+	padding: 10px;
+	width: 100%;
+	border-radius:20px
+}
+.contact [type=submit]{
+	background-color: yellow;
+	color: red;
+	font-weight: 800;
+	font-size: 16px;
+	padding: 5px;
+	width: 30%;
+}
+.contact [type=submit]:hover{
+	background-color: red;
+	color: white;
+}
+.contact h3{
+	padding-top: 4%;
+	font-size: 100%;
+}
+.contact-left{
+	width: 48%;
+	background-color: transparent;
+	margin-left: 2%;
+	color: aqua;
+	float: left;
+}
+.contact figure img{
+	width: 14%;
+	float: left;
+	margin: 5px;
+}
+.contact-right{
+	width: 48%;
+	background-color: transparent;
+	color: aqua;
+	float: right;
+	margin-right: 2%;
+}
+
+/*------------------About us page designs------------------*/
+.abt{
+	width: 90%;
+	margin: 20px auto;
+	height: auto;
+	background-color: transparent;
+	padding: 20px;
+}
+.abt h1{
+	text-align: center;
+	font-size: 50px;
+	color: #F90423
+}
+.abt p{
+	text-align: justify;
+	padding: 40px 5px;
+	font-size: 20px;
+	line-height: 1.5;
+}
+.abt figure{
+	width: 300px;
+	float: right;
+	margin: 10px;
+	border-color: rgba(252,0,4,1.00);
+	border-width: 10px;
+	margin-right: 20px;
+	padding-right: 10px;
+}
+.abt figure img{
+	width: 100%;
+	margin-top: 30px;
+	
+	
+	
+}
+
+/*------------------request page designs------------------*/
+
+.req{
+	width: 90%;
+	margin: 20px auto;
+	height: auto;
+	background-color: transparent;
+	padding: 20px;
+}
+.req h1{
+	text-align: center;
+	font-size: 50px;
+	color: #F90423
+}
+.req p{
+	text-align: left;
+	padding: 40px 5px;
+	font-size: 20px;
+}
+
+/*-------------------images of services page styles-------------------*/
+.banner{
+	width: 90%;
+	margin: 20px auto;
+	height: auto;
+	background-color: transparent;
+	padding-top:20px ;
+}
+.banner h1{
+	text-align: center;
+	font-size: 50px;
+	color: yellow;background-color: red;
+	padding: 12px 20px;
+	margin-bottom: 30px;
+	font-family:Monaco, Courier New, monospace;
+	border-radius: 40px;
+}
+.banner figure{
+	margin: 10px auto;
+	width: 100%;
+}
+.banner img{
+	width: 49.4%;
+	margin: 1px auto;
+	
+}
+
+
+
+
+
+
+
+footer{
+	margin-top: auto;
+	margin-bottom: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #111111;
+	color: #FFFFFF;
+	height: auto;
+	width: 100%;
+	padding-top: 40px;
+}
+.foot{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.foot h3{
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 3rem;
+}
+.foot p{
+	max-width: 500px;
+	margin: 10px auto;
+	line-height: 28px;
+	font-size: 14px;
+}
+.socials{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0 2rem 0;
+}
+.socials li{
+	margin: 0 2px;
+}
+
+.socials a{
+	text-decoration: none;
+	color:#FFFE5E;
+}
+.socials a:hover{
+	color: #E40003;
+}
+.foot-bottom{
+	background-color: #000000;
+	width: 100%;
+	padding: 20px 0;
+	text-align: center;
+}
+.foot-bottom p{
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+}
+.foot-bottom span{
+	text-transform: uppercase;
+	opacity: 0.4;
+	font-weight: 300;
+}
+.bodymain{
+	width:90%;
+	padding:10px;
+	position: inherit;
+	align-content: center;
+	align-items: center;
+}
+.bodymain img{
+	width: 100%;
+	align-content: center;
+	align-self: center;
+}
+
+
+@media screen and (max-width:690px){
+	.container{
+		width: 100%;
+	}
+	nav ul{
+		text-align: center;
+	}
+	button{
+		margin-left: 43%;
+	}
+	.service-cont img{
+		width: 98%;margin: 2px 1%;
+	}
+	.home-ser img{
+		width: 100%;
+	}
+	.abt figure{
+		width: 90%;
+		margin-left: 5%;
+	}
+	.contact form{
+	color: white;padding: 50px;margin-left: 0%;
+}
+	.contact label,input,textarea{
+	width: 100%;
+		margin-top: 10px;
+}
+	.contact-left{
+		margin-bottom: 10px;
+	}
+	.contact-right{
+		margin-bottom: 10px;
+	}
+	.contact figure img{
+		float: none;
+	}
+
+}
+@media screen and (max-width:625px){
+	.mobnav{
+		display: block;
+	}
+	nav ul{
+		display: none;
+	}
+	.home-1 img{
+		float: none;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.home-1{
+		height: auto;
+	}
+	.home-1 p{
+		padding-top: 30px;
+	}
+		.banner img{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.banner figure{
+		padding-left: 0;
+		margin-bottom: 20px;
+	}
+	.contact [type=submit]{
+		width: 80%;
+		margin-left: 10%;
+	}
+	.contact h3{
+		font-size: 14px;
+	}
+	
+}
+
+@media screen and (min-width:950px){
+	.home-1 p{
+		font-size: 22px;
+		line-height: 32px;
+	}
+	.home-abt p{
+		font-size: 22px;
+	}
+	.home-abt h1{
+		font-size: 60px
+	}
+	.home-ser p{
+		font-size: 22px;
+	}
+	.home-ser h1{
+		font-size: 60px;
+	}
+		.banner img{
+		width: 32.92%;
+		margin-bottom: 10px;
+	}
+	.banner figure{
+		padding-left: 0;
+		margin-bottom: 20px;
+	}
+	.contact form{
+	color: white;padding: 50px;margin-left: 10%;
+}
+.contact label,input,textarea{
+	width: 80%;
+}
+}
